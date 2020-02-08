@@ -27,6 +27,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+      typeName: "GraphCMS",
+      fieldName: "gcms",
+      url: "https://api-useast.graphcms.com/v1/ck6cu20ns0gkd01d79f2sgfbc/master",
+    },
+}
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
