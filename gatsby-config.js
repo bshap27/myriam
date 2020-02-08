@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `myriam schroeter`,
+    description: `I'm a producer. Some of the folks I've worked with include Revlon, IFC, LG, Nordstrom, IMG, Estee Lauder and Sundance. I've also produced a number of independent narrative shorts, as well as scripted music-related content for Warner Bros and Def Jam. Prior to producing, I worked as a content editor and marketer for Amazon.`,
+    author: `@bshap27`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
