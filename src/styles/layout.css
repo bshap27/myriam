@@ -14,6 +14,13 @@ body {
 #gatsby-focus-wrapper {
   padding: 0 30px;
 }
+main {
+  min-height: calc(70vh - 26px);
+}
+footer {
+  margin-top: 20px;
+  font-size: 9px;
+}
 article,
 aside,
 details,
