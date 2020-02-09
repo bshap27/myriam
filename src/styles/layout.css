@@ -60,6 +60,10 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   color: #a1a1a1;
   text-decoration:none;
 }
+p a {
+  color: white !important;
+  text-decoration: underline !important;
+}
 a:hover {
   outline-width: 0;
   text-decoration: underline;
@@ -240,7 +244,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 h1 {
   margin-left: 0;
@@ -250,7 +254,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 2rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -265,12 +269,13 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 2rem;
   color: inherit;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 1.2rem;
   line-height: 1.1;
+  letter-spacing: .1em;
 }
 h3 {
   margin-left: 0;
@@ -399,6 +404,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  color: #a1a1a1;
+  font-size: 13px;
 }
 figure {
   margin-left: 0;

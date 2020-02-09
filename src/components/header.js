@@ -9,6 +9,10 @@ const navItemStyle = {
   letterSpacing: '.1em',
 }
 
+const navItemActive = {
+  color: 'white',
+}
+
 const Header = ({ siteTitle }) => (
   <header>
     <div
@@ -41,10 +45,10 @@ const Header = ({ siteTitle }) => (
           alignItems: 'center',
           width: '480px',
         }}>
-          <li style={navItemStyle}><Link to="/">commercial/branded</Link></li>
-          <li style={navItemStyle} className="active-link"><Link to="/">narrative</Link></li>
-          <li style={navItemStyle}><Link to="/">stills</Link></li>
-          <li style={navItemStyle}><Link to="/">about</Link></li>
+          <li style={navItemStyle}><Link to="/branded" activeStyle={navItemActive}>commercial/branded</Link></li>
+          <li style={navItemStyle}><Link to="/narrative" activeStyle={navItemActive}>narrative</Link></li>
+          <li style={navItemStyle}><Link to="/stills" activeStyle={navItemActive}>stills</Link></li>
+          <li style={navItemStyle}><Link to="/about/" activeStyle={navItemActive}>about</Link></li>
         </ul>
       </div>
       <h2
