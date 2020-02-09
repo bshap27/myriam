@@ -2,31 +2,63 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+
+const navItemStyle = {
+  fontFamily: 'Sanchez',
+  fontSize: '11px',
+  letterSpacing: '.1em',
+}
+
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `30px 0`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <div className="title-row"
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+        }}
+      >
+        <h1 style={{ margin: 0, letterSpacing: '2px' }}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle.toUpperCase()}
+          </Link>
+        </h1>
+        <ul style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-evenly',
+          alignItems: 'center',
+          width: '480px',
+        }}>
+          <li style={navItemStyle}><Link to="/">commercial/branded</Link></li>
+          <li style={navItemStyle} className="active-link"><Link to="/">narrative</Link></li>
+          <li style={navItemStyle}><Link to="/">stills</Link></li>
+          <li style={navItemStyle}><Link to="/">about</Link></li>
+        </ul>
+      </div>
+      <h2
+        style={{
+          fontFamily: 'Europa, serif',
+          fontSize: '12px',
+          letterSpacing: '.04em',
+          lineHeight: '2em',
+          color: '#aaa',
+          marginBottom: 0,
+        }}
+      >
+        producer
+      </h2>
     </div>
   </header>
 )
