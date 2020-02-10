@@ -10,7 +10,14 @@ const About = () => (
   <Layout>
     <SEO title="about" />
     <StaticQuery
-      query={graphql`query { gcms { texts { key, text, image { url } } } }`}
+      query={graphql`
+        query {
+          gcms {
+            texts { key, text }
+            assets { name, url }
+          }
+        }
+      `}
       render={data => (
         <div>
           <h2
@@ -30,7 +37,7 @@ const About = () => (
               <div>
                 <img
                   style={{height: '100%', width: '500px'}}
-                  src={data.gcms.texts.find(c => c.key === 'aboutText').image.url}
+                  src={data.gcms.assets.find(a => a.name === 'aboutMyriam').url}
                   alt="Myriam Schroeter"
                 />
               </div>
