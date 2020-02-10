@@ -43,11 +43,10 @@ const Header = ({ siteTitle }) => (
           flexDirection: 'row',
           justifyContent: 'space-evenly',
           alignItems: 'center',
-          width: '480px',
+          width: '400px',
         }}>
           <li style={navItemStyle}><Link to="/branded" activeStyle={navItemActive}>commercial/branded</Link></li>
           <li style={navItemStyle}><Link to="/narrative" activeStyle={navItemActive}>narrative</Link></li>
-          <li style={navItemStyle}><Link to="/stills" activeStyle={navItemActive}>stills</Link></li>
           <li style={navItemStyle}><Link to="/about/" activeStyle={navItemActive}>about</Link></li>
         </ul>
       </div>
